@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<div class="wrapper">
+  <div *ngFor="let user of comments">
+    <img
+      src="https://www.w3schools.com/howto/img_avatar.png"
+      alt="Avatar"
+      class="avatar"
+    />
+    <p>{{ user.name.split(' ').slice(0, 2).join(' ').toUpperCase() }}</p>
+    <p appHighlight>{{ user.email }}</p>
+    <span >Id - {{ user.id }}</span>
+  </div>
+</div>
